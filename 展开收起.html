@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .test_checkbox,
+        .test_more,
+        .test_hide,
+        .test_checkbox:checked ~ .test_label .test_show {
+            position:absolute;
+            display: none;
+        }
+
+        .test_checkbox:checked ~ .test_more,
+        .test_checkbox:checked ~ .test_label .test_hide {
+            position: static;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+css3巩固学习...
+<input type="checkbox" id="testToggleCheckbox" class="test_checkbox" />
+<span class="test_more">撸起袖子加油干！</span>
+<label class="test_label" for="testToggleCheckbox">
+    <span class="test_hide">收起↑</span>
+    <span class="test_show">展开↓</span>
+</label>
+</body>
+</html>
