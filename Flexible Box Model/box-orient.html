@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test_box {
+            width: 300px;
+            margin: 0 auto;
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+            box-orient:horizontal;
+            padding: 20px;
+            background: #f0f3f9;
+        }
+        .list{
+            padding: 0 1em;
+            font: bold 36px/120px monaco;
+            text-shadow: 1px 1px #eee;
+            -webkit-box-flex: 1;
+        }
+        .one{background: #99FF00;}
+        .two{background: #00CC99}
+        .three{background:#CCCC00}
+    </style>
+</head>
+<body>
+<div class="test_box">
+    <div class="list one">1</div>
+    <div class="list two">2</div>
+    <div class="list three">3</div>
+</div>
+</body>
+</html>
